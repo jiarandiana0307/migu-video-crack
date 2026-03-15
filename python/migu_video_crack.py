@@ -14,9 +14,16 @@ h = '10011'
 
 
 def getPlayerVersion():
-    url = 'https://app-sc.miguvideo.com/common/v1/settings/H5_DetailPage'
-    paramValue = requests.get(url).json()['body']['paramValue']
-    playerVersion = json.loads(paramValue)['playerVersion']
+    # 获取最新的mgprtcl.wasm文件版本，此文件用于对视频URL进行加密
+    # url = 'https://app-sc.miguvideo.com/common/v1/settings/H5_DetailPage'
+    # paramValue = requests.get(url).json()['body']['paramValue']
+    # playerVersion = json.loads(paramValue)['playerVersion']
+
+    # 2026.03.02更新了版本v_20260302144246_07e30d7c
+    # 如果使用最新的版本，则此脚本已无法运行。但其实
+    # 视频URL底层的加密算法没变，所以这里仍然可以使用
+    # 上一版本的mgprtcl.wasm文件对视频URL进行加密
+    playerVersion = 'v_20251124155500_63c16e66'
     return playerVersion
 
 # 定义wasm的导入函数
