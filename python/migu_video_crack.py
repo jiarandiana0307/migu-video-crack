@@ -9,8 +9,8 @@ wasm = None
 memory_p = None
 memory_h = None
 
-p = 'J6XuCcCtPfVdSv6YUls4Jg=='
-h = '10011'
+p = '+6e7/UkVh9XuFSTC5k08Qw=='
+h = '10012'
 
 
 def getPlayerVersion():

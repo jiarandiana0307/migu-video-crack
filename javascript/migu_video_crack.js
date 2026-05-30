@@ -16,8 +16,8 @@ let memory = null;
 let memory_p = null;
 let memory_h = null;
 
-const p = 'J6XuCcCtPfVdSv6YUls4Jg==';
-const h = '10011';
+const p = '+6e7/UkVh9XuFSTC5k08Qw==';
+const h = '10012';
 
 function stringToUTF8(string, offset, length) {
     const encoder = new TextEncoder();
